@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    color: #fff;
+    padding: 8px;
+    background-color: #5454ff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav, li, a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: #ffffffb5;
+    text-decoration: none;
+}
+
+.sobre {
+    display: flex;
+    margin-top: 24px;
+}
+
+.sobre img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.texto-sobre p {
+    margin-top: 16px;
+}
+
+.linha {
+    border: 1px solid #5454ff;
+    margin-top: 16px;
+}
+
+.produtos h2 {
+    margin-top: 32px;
+}
+
+.disposicao {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.prod img {
+    margin-top: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc88;
+}
+
+.descricao h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.descricao p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.descricao button {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #5454ff;
+    color: #ffffffb5;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    background-color:#5454ff;
+    padding: 16px;
+}
+
+footer p {
+    color: #ffffffb5;
+    display: inline;
+    margin-right: 16px;
+}
+
+footer h3 {
+    color: #ffffffb5;
+    display: inline;
+}
+
+footer a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .disposicao {
+        display: block;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .descricao p, button {
+        margin-bottom: 24px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: block;
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .disposicao {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    footer .container {
+        display: flex;
+    }
+
+    .descricao button {
+        margin-bottom: 80px;
+    }
+}
